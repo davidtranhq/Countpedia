@@ -1,0 +1,89 @@
+body
+{
+    background: url(../img/paper_background.png);
+}
+
+#wrapper
+{
+    position: relative;
+    width: 900px; 
+    margin: 0 auto;
+}
+
+#container
+{
+    background: url(../img/paper.png);
+}
+
+#picture
+{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 30%;
+}
+
+#polaroid
+{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+#portrait
+{
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    width: 225px;
+    z-index: 1;
+}
+
+@font-face
+{
+    font-family: script;
+    src: url(../fonts/script.ttf);
+}
+
+
+#title
+{
+    padding-top: 1px;
+    padding-left: 50px;
+    font: 32px script;
+}
+
+#content1
+{
+    padding-left: 50px;
+    width: 60%;
+    height: 300px;
+    font: 20px Times New Roman;
+    display: inline-block;
+}
+
+#content2
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    font: 20px Times New Roman;
+    display: block;
+}
+
+h2
+{
+    font-weight: normal;
+    border-bottom: 1px solid darkkhaki ;
+}
+
+#logo
+{
+    
+}
+
+#footer
+{
+    background: url(../img/paper_footer.png);
+    height: 50px;
+}
