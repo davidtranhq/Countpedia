@@ -58,7 +58,7 @@ function createList()
         let linkNode = document.createElement("a")
         let linkText = document.createTextNode(name);
         linkNode.appendChild(linkText);
-        linkNode.href = window.location.origin + "/countpedia/pages/" + link + ".html";
+        linkNode.href = "/countpedia/pages/" + link + ".html";
         node.appendChild(linkNode);
         document.getElementById("character_list").appendChild(node);
     }
