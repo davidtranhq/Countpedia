@@ -13,21 +13,19 @@ const unsorted_characters = new Map(
     ["Eugénie Danglars", "eugenie_danglars"],
     ["Gérard de Villefort", "gerard_villefort"],
     ["Renée de Saint-Méran", "renee"],
-    ["Marquis de Saint-Méran", "marquis_st"],
-    ["Marquise de Saint-Méran", "marquise_st"],
     ["Valentine de Villefort", "valentine"],
     ["Noirtier de Villefort", "noirtier"],
     ["Héloïse de Villefort", "heloise"],
     ["Édouard de Villefort", "edouard"],
-    ["Bendetto", "bendetto"],
-    ["Andrea Cavalcanti", "bendetto"],
+    ["Benedetto", "benedetto"],
+    ["Andrea Cavalcanti", "benedetto"],
     ["Mercédès", "mercedes"],
     ["Madame de Morcef", "mercedes"],
     ["Fernand Mondego", "fernand"],
     ["Albert de Morcef", "albert"],
-    ["Pierre Morrel", "pierre"],
+    ["Pierre Morrel", "monsieur_morrel"],
     ["Monsieur Morrel", "monsieur_morrel"],
-    ["Maximilian Morrel", "maximilian"],
+    ["Maximilien Morrel", "maximilien"],
     ["Julie Herbault", "julie"],
     ["Emmanuel Herbault", "emmanuel"],
     ["Coclès", "cocles"],
@@ -36,10 +34,9 @@ const unsorted_characters = new Map(
     ["Baron Franz d'Épinay", "franz"],
     ["Lucien Debray", "lucien"],
     ["Beauchamp", "beauchamp"],
-    ["Monsieur de Boville", "boville"],
     ["Barrois", "barrois"],
     ["Monsieur d'Avrigny", "avrigny"],
-    ["Bartolomeo Cavalcanti", "bartolomeo"],
+    ["Major Bartolomeo Cavalcanti", "bartolomeo"],
     ["Abbé Faria", "faria"],
     ["Giovanni Bertuccio", "bertuccio"],
     ["Luigi Vampa", "luigi"],
@@ -61,7 +58,7 @@ function createList()
         let linkNode = document.createElement("a")
         let linkText = document.createTextNode(name);
         linkNode.appendChild(linkText);
-        linkNode.href = "pages/" + link + ".html";
+        linkNode.href = "/pages/" + link + ".html";
         node.appendChild(linkNode);
         document.getElementById("character_list").appendChild(node);
     }
